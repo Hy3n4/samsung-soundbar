@@ -8,9 +8,6 @@ from typing import Optional
 from urllib.parse import quote, urlencode
 
 import aiohttp
-import voluptuous as vol
-import xmltodict
-
 from homeassistant.components.media_player import (
     PLATFORM_SCHEMA,
     MediaPlayerEntity,
@@ -23,13 +20,16 @@ from homeassistant.helpers import config_validation as cv
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.typing import ConfigType, DiscoveryInfoType
+import voluptuous as vol
+import xmltodict
+
+from .const import DEFAULT_PORT
 
 _LOGGER = logging.getLogger(__name__)
 
 # Define constants for your integration
 DOMAIN = "samsung_soundbar"
 DEFAULT_NAME = "Samsung Soundbar"
-DEFAULT_PORT = 56001
 TIMEOUT = 10
 VOLUME_STEP = 1
 

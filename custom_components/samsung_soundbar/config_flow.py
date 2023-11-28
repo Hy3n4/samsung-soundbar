@@ -4,9 +4,7 @@ from homeassistant.core import HomeAssistant, callback
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 import voluptuous as vol
 
-from .const import DOMAIN
-
-DEFAULT_PORT = 80
+from .const import DEFAULT_PORT, DOMAIN
 
 
 class SoundbarConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
