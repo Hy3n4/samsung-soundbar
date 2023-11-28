@@ -49,7 +49,7 @@ class SoundbarConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             # You would use your existing method, e.g., `self.exec_cmd()`,
             # to send a test command to the soundbar and check the response.
             # This example is just a placeholder and won't actually work.
-            response = await session.get(f"http://{ip_address}:{port}/test")
+            response = await session.get(f"http://{ip_address}:{port}/UIC?cmd=%3Cname%3EGetFunc%3C/name%3E")
             response.raise_for_status()
             return True
         except Exception:
