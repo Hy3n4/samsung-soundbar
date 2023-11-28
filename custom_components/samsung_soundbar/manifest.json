@@ -1,0 +1,11 @@
+{
+  "codeowners": ["@hy3n4"],
+  "config_flow": false,
+  "dependencies": [],
+  "documentation": "https://github.com/hy3n4/samsung-soundbar-custom-component",
+  "domain": "samsung_soundbar",
+  "iot_class": "local_polling",
+  "name": "Samsung Soundbar",
+  "requirements": ["xmltodict==0.12.0"],
+  "version": "0.0.1"
+}
