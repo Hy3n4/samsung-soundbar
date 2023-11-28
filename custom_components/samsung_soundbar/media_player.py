@@ -45,17 +45,6 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
 )
 
 
-async def async_setup_entry(
-    hass: HomeAssistant,
-    config_entry: ConfigEntry,
-    async_add_entities,
-):
-    """Setup sensors from a config entry created in the integrations UI."""
-    await hass.data[DOMAIN][config_entry.entry_id].async_register_component(
-        "media_player", async_add_entities
-    )
-
-
 def async_setup_platform(
     hass: HomeAssistant,
     config: ConfigType,
