@@ -1,0 +1,20 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Soundbar",
+        "data": {
+          "ip_address": "IP Address",
+          "port": "Port (optional)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the soundbar, please verify the IP address and port, and try again",
+      "invalid_ip": "Invalid IP address, please enter a valid IP address and try again"
+    },
+    "abort": {
+      "already_configured": "This soundbar is already configured"
+    }
+  }
+}
